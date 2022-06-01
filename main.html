@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Notepad || Akindele Daniel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section class="note_list">
+        <h1>My Note Pad...</h1>
+        <div class="search">
+            <input id="search" type="search" placeholder="Input note title">
+            <h2 class="noList">No notes added yet...</h2>
+        </div>
+        <div class="items">
+            <ul id = 'items_List'>
+
+            </ul>
+        </div> 
+        <div class="add">
+            <button class="addbtn">Add Note</button>
+        </div>
+        <div class="clrbtn">
+            <button class="clrbtn" onclick="clearAll()">Delete All Notes</button>
+        </div>
+    </section>
+
+    <section class="note_input">
+        <div class="btns">
+            <button class="btn" id="done">Done</button>
+            <button class="btn clr" onclick="del_Notes()">Delete Notes</button>
+            <button class="btn" id="cancel">Cancel</button>
+        </div>
+        <div class="conTitle">
+        <input type="text" placeholder="Create a title..." class="title">
+        </div>
+        <div class="conText">
+        <textarea class="noteArea"></textarea>
+        </div>
+    </section>
+</body>
+<script>
+    console.log('This is an inline scripts')
+    const allli = document.querySelector('li:after')
+    console.log(allli)
+</script>
+</html>

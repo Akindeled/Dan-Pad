@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    transition: 0.4s;
+    margin: 0;
+    box-sizing: border-box;
+    background: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.clrbtn
+{
+    background: #000;
+}
+.noList{
+    display: none;
+    background: aliceblue;
+    padding: 10px;
+    color: #b1d7f8;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.Daniel_alert{
+    padding: 20px;
+    width: 250px;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    margin: -250px;
+}
+body{
+    max-width: 750px;
+    margin: auto;
+}
+section.note_list{
+    padding: 0;
+    /* background: #000; */
+  
+    /* margin: auto; */
+    /* padding: 50px; */
+    /* padding-top: 10px; */
+}
+section.note_list h1{
+    /* width: 100%; */
+    text-align: center;
+    background: #044781;
+    padding: 10px;
+    color: white;
+    /* border-radius: 20px; */
+}
+section.note_list .search{
+    padding: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
+}
+section.note_list .search input::placeholder{
+    color: rgba(4, 71, 129,0.2);
+}
+section.note_list .search input{
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 90%;
+    color: #044781;
+    /* margin: 30px; */
+    background: transparent;
+    position: absolute;
+    /* text-align: center; */
+    border: #b1d7f8 2px solid;
+}
+section.note_list input:focus{
+    outline: none;
+    border-color: #b1d7f8;
+    /* color: #000; */
+}
+/* Styling for the head part 
+Now let us talk about the displayiied kitems  */
+
+section.note_list div.items{
+    background-color: transparent;
+    padding: 50px;
+    padding-top: 0;
+
+}
+
+section.note_list div.items ul{
+    border-left: 1px solid #b1d7f8;
+    background: aliceblue;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+section.note_list div.items ul li{
+    background: transparent;
+    padding: 20px;
+    list-style-type: none;
+    border-bottom:1px solid #b1d7f8;
+}
+section.note_list div.items ul li:before{
+    content: "";
+    background: transparent;
+    border: #044781 solid 2px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: -45px;
+}
+section.note_list div.items ul li:last-child{
+    border: none;
+}
+
+/* Working in button */
+
+div.add{
+    padding: 10px;
+    background: transparent;
+    position: absolute;
+    right: 50px;
+    font-size: 10px;
+    margin: auto;
+}
+.btn{
+    padding:10px 20px;
+    background: #044781;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+div.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.add button.addbtn{
+    display: flex;
+    border: none;
+    box-shadow: 1px 1px 10px  black;
+    color: aliceblue;
+    justify-content: center;
+    font-size: 5px;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #044781;
+}
+.clr{
+    background: #a1c9ec;
+}
+
+div.clrbtn{
+    border-radius:  0px 40px 40px 0px;
+    padding:  15px 20px;
+    width: 300px;
+    background: rgb(229, 234, 238);
+    display: none;
+}
+div.clrbtn button.clrbtn{
+    background: #044781;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: aliceblue;
+    
+}
+
+
+/* The styling for input environment */
+body section.note_input{
+    display: none;
+    background: aliceblue;
+    padding: 20px;
+    color: black;
+}
+body section.note_input .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    padding-top:-10px;
+    border-bottom: 1px solid #b1d7f8 ;
+
+}
+body section.note_input div.conTitle{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body section.note_input div.conTitle .title{
+    padding: 8px 10px;
+    width: 95%;
+    margin: auto;
+    border: 1px solid #216fb4;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background: transparent;
+    color:#216fb4;
+}
+body section.note_input div.conTitle .title:focus{
+    outline: none;
+}
+body section.note_input .conText{
+    display: flex;
+    /* background: #fff; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+body section.note_input textarea.noteArea{
+/* 
+    cols:50wh;
+    rows:100vh; */
+    width: 90%;
+    overflow: hidden;
+    height: 100vh;
+    padding: 10px 5px;
+    background: aliceblue;
+    color: black;
+    background: transparent;
+    border: none;
+    
+}
+body section.note_input textarea.noteArea:focus{
+    outline: none;
+    border: none;
+}

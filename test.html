@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tesing....</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        const obj = {
+            name: 'Akindele Daniel',
+            school: 'AFIT',
+            address: 'Mando',
+            greeting: function(){
+                const dt = new Date()
+                // console.log(dt)
+                let note;
+                 let dtt = dt.getMonth()
+                if(dtt > 12){
+                    note = "The time is greater than 12"
+                } 
+                else{
+                    note = "The time is less than 12"
+                }
+                return note
+            }
+        }
+        const keys = Object.keys(obj)
+        console.log(keys)
+        function deepcopy(obj){
+            const obj_one = {}
+            const keys = Object.keys(obj)
+            // let key;
+            for (let i = 0; i < keys.length; i++){
+                const key = keys[i]
+                if (typeof obj[keys[i]] === 'object'){
+                    obj_one[key] = deepCopy()
+                }
+                else{
+                    obj_one[key] = obj[key]
+                }
+            }
+
+            return obj_one
+        }
+
+        const obj_one = deepcopy(obj)
+        console.log(obj_one)
+        console.log(obj_one.greeting())
+        // All the value of the new variable are copied and disconnected from the original variable
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
